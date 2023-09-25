@@ -2,7 +2,7 @@ import pickle
 import gzip
 import numpy as np
 
-with gzip.open('C:/Users/User/Desktop/Python_Practice/MaintenancePredict/AMSModel.pgz','r') as f:
+with gzip.open('./AMSModel.pgz','r') as f:
     Model = pickle.load(f)
 
 def PredictAlarm(data):
